@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BusBooking - Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">🚌 BusBooking</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="routes.html">Routes</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Book Your Bus Ticket<br>Easily &amp; Comfortably</h1>
+    <p>Travel Safe · Travel Smart · Travel Together</p>
+
+    <form id="searchForm" class="search-box">
+      <label>From
+        <select id="fromCity" required>
+          <option value="">Select City</option>
+          <option>Ahmedabad</option>
+          <option>Surat</option>
+          <option>Vadodara</option>
+          <option>Rajkot</option>
+          <option>Mumbai</option>
+        </select>
+      </label>
+
+      <label>To
+        <select id="toCity" required>
+          <option value="">Select City</option>
+          <option>Mumbai</option>
+          <option>Surat</option>
+          <option>Ahmedabad</option>
+          <option>Vadodara</option>
+          <option>Rajkot</option>
+        </select>
+      </label>
+
+      <label>Journey Date
+        <input type="date" id="journeyDate" required>
+      </label>
+
+      <button class="btn" type="submit">Search Bus</button>
+    </form>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <h2>Why Choose Us?</h2>
+    <p>Travel comfortably with BusBooking.</p>
+  </div>
+
+  <div class="feature-grid">
+    <article class="feature">
+      <div class="feature-icon">🛡️</div>
+      <h3>Safe &amp; Secure</h3>
+      <p>Your safety is our priority.</p>
+    </article>
+
+    <article class="feature">
+      <div class="feature-icon">💰</div>
+      <h3>Best Prices</h3>
+      <p>Affordable tickets for everyone.</p>
+    </article>
+
+    <article class="feature">
+      <div class="feature-icon">📍</div>
+      <h3>Wide Network</h3>
+      <p>Travel between popular cities.</p>
+    </article>
+
+    <article class="feature">
+      <div class="feature-icon">🎧</div>
+      <h3>24/7 Support</h3>
+      <p>We are here to help you.</p>
+    </article>
+  </div>
+</section>
+
+<section class="promo">
+  <div>
+    <h2>Your journey starts here!</h2>
+    <p>Explore routes and choose your seat.</p>
+  </div>
+  <a class="btn btn-light" href="routes.html">View Routes</a>
+</section>
+
+<footer>© 2026 BusBooking | Student Project</footer>
+<script src="script.js"></script>
+</body>
+</html>

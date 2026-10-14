@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - BusBooking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">🚌 BusBooking</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="routes.html">Routes</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="contact-hero">
+  <h1>Contact Us</h1>
+  <p>We are here to help you!</p>
+</section>
+
+<main class="page-wrap contact-layout">
+  <section class="contact-info">
+    <h2>Get In Touch</h2>
+
+    <div class="contact-item">
+      <span>☎</span>
+      <div>
+        <strong>Customer Care</strong>
+        <p>+91 98765 43210</p>
+        <small>Monday–Saturday, 9 AM–6 PM</small>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <span>📍</span>
+      <div>
+        <strong>Our Office</strong>
+        <p>Ahmedabad, Gujarat, India</p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <span>✉</span>
+      <div>
+        <strong>Email</strong>
+        <p>support@busbooking.demo</p>
+      </div>
+    </div>
+  </section>
+
+  <form id="contactForm" class="contact-form">
+    <h2>Send Us a Message</h2>
+
+    <label>Your Name
+      <input type="text" name="name"
+        placeholder="Enter your name" required>
+    </label>
+
+    <label>Your Email
+      <input type="email" name="email"
+        placeholder="Enter your email" required>
+    </label>
+
+    <label>Your Message
+      <textarea name="message" rows="5"
+        placeholder="Write your message" required></textarea>
+    </label>
+
+    <button type="submit" class="btn">Submit</button>
+    <p id="contactMessage" class="form-message"></p>
+  </form>
+</main>
+
+<div class="map-placeholder">
+  📍 Ahmedabad, Gujarat
+  <span>Map preview placeholder</span>
+</div>
+
+<footer>© 2026 BusBooking | Student Project</footer>
+<script src="script.js"></script>
+</body>
+</html>

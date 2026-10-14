@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seat Booking - BusBooking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">🚌 BusBooking</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="routes.html">Routes</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <div class="page-title">
+    <h1>Select Your Seats</h1>
+    <p>Choose an available seat to continue.</p>
+  </div>
+
+  <div class="booking-layout">
+    <aside class="journey-card">
+      <h2>Journey Details</h2>
+      <div class="detail-row">
+        <span>From</span><strong id="bookingFrom">Ahmedabad</strong>
+      </div>
+      <div class="detail-row">
+        <span>To</span><strong id="bookingTo">Mumbai</strong>
+      </div>
+      <div class="detail-row">
+        <span>Date</span><strong id="bookingDate">Not selected</strong>
+      </div>
+      <div class="detail-row">
+        <span>Departure</span><strong>07:00 AM</strong>
+      </div>
+      <div class="detail-row">
+        <span>Bus Type</span><strong>AC Sleeper</strong>
+      </div>
+      <div class="detail-row">
+        <span>Selected Seats</span><strong id="seatCount">0</strong>
+      </div>
+      <div class="detail-row total">
+        <span>Total Fare</span><strong id="totalPrice">₹0</strong>
+      </div>
+      <button class="btn full" id="continueBooking">
+        Proceed to Ticket
+      </button>
+      <p class="tiny">Demo project. No real payment is collected.</p>
+    </aside>
+
+    <section class="seat-card">
+      <div class="bus-front">🚌 DRIVER</div>
+      <div class="seat-grid" id="seatGrid"></div>
+      <div class="legend">
+        <span><i class="seat-dot available"></i> Available</span>
+        <span><i class="seat-dot selected-dot"></i> Selected</span>
+        <span><i class="seat-dot booked-dot"></i> Booked</span>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>© 2026 BusBooking | Student Project</footer>
+<script src="script.js"></script>
+</body>
+</html>

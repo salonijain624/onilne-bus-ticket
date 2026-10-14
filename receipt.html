@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticket Receipt - BusBooking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">🚌 BusBooking</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="routes.html">Routes</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="page-wrap receipt-wrap">
+  <div class="success-banner">
+    <span class="checkmark">✓</span>
+    <div>
+      <h2>Booking Successful!</h2>
+      <p>Your sample ticket has been created.</p>
+    </div>
+  </div>
+
+  <section class="ticket">
+    <div class="ticket-heading">
+      <div>
+        <span class="eyebrow">BUSBOOKING E-TICKET</span>
+        <h1>Bus Ticket</h1>
+      </div>
+      <span class="ticket-status">CONFIRMED</span>
+    </div>
+
+    <div class="ticket-columns">
+      <section>
+        <h3>Journey Details</h3>
+        <div class="detail-row">
+          <span>From</span><strong id="receiptFrom">Ahmedabad</strong>
+        </div>
+        <div class="detail-row">
+          <span>To</span><strong id="receiptTo">Mumbai</strong>
+        </div>
+        <div class="detail-row">
+          <span>Date</span><strong id="receiptDate">Not selected</strong>
+        </div>
+        <div class="detail-row">
+          <span>Departure</span><strong>07:00 AM</strong>
+        </div>
+        <div class="detail-row">
+          <span>Arrival</span><strong>01:30 PM</strong>
+        </div>
+        <div class="detail-row">
+          <span>Bus Type</span><strong>AC Sleeper</strong>
+        </div>
+        <div class="detail-row">
+          <span>Booking No.</span><strong id="bookingNumber">BB123456</strong>
+        </div>
+      </section>
+
+      <section>
+        <h3>Passenger Details</h3>
+        <label class="receipt-label">Passenger Name
+          <input id="passengerName"
+            placeholder="Enter passenger name">
+        </label>
+
+        <div class="detail-row">
+          <span>Seat No.</span><strong id="receiptSeats">Not selected</strong>
+        </div>
+
+        <div class="fare-box">
+          <span>Total Fare</span>
+          <strong id="receiptFare">₹0</strong>
+        </div>
+
+        <div class="barcode"></div>
+      </section>
+    </div>
+
+    <p class="note">
+      This is a sample ticket for a college project, not a real travel ticket.
+    </p>
+
+    <div class="ticket-actions">
+      <button class="btn" onclick="window.print()">Print Ticket</button>
+      <a class="btn btn-outline" href="index.html">Back to Home</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 BusBooking | Student Project</footer>
+<script src="script.js"></script>
+</body>
+</html>s
